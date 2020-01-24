@@ -7,5 +7,34 @@ body{
 }
 
 .mkbig{
-      width: 100%
+      width: 100%;
+}
+
+.header{
+      background: #28a745;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+}
+
+
+/* .countryname{
+      top: 130px !important;
+      right: 550px !important
+}
+
+top: 130, right: 550, color: "#fff", position: "absolute", zIndex: 10 */
+
+@media screen and (max-width: 992px) {
+  .countryname{
+      top: 130px !important;
+      right: 25vw !important;
+      left: 25vw !important
+  }
+  .countryimage{
+      height: 40vh !important
+  }
+  .countryimage img{
+      height: 100% !important
+  }
 }
