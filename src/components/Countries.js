@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 import Mockoffline from './Mockoffline'
+import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 class Countries extends Component {
 
@@ -37,7 +38,10 @@ class Countries extends Component {
                                                 <li className="list-group-item"><b>Population:</b> {country.population}</li>
                                                 <li className="list-group-item"><b>Timezones:</b> {country.timezones}</li>
                                           </ul>
-                                          <button className="btn btn-success">Read more</button>
+                                          <Link to={{
+                                                pathname: "/details",
+                                                country
+                                          }}><button className="btn btn-success mkbig">Read more</button></Link>
                                     </div>
                               </div>
                         ))
