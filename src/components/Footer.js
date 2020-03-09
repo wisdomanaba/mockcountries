@@ -5,7 +5,7 @@ class Footer extends Component {
             const date = new Date()
             return (
                   <div className="header">
-                        <p>Copyright &copy; Joshua Equere {date.getFullYear()}. All right reserved </p>
+                        <p>Copyright &copy; Wisdom Anaba {date.getFullYear()}. All right reserved </p>
                   </div>
             )
       }
