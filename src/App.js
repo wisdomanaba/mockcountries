@@ -1,4 +1,5 @@
 import React from 'react'
+import AdSense from 'react-adsense';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Header from './components/Header'
@@ -6,7 +7,6 @@ import Footer from './components/Footer'
 import Countries from './components/Countries'
 import Details from './components/Details'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import AdSense from 'react-adsense';
 
 function App() {
   return (
@@ -14,11 +14,12 @@ function App() {
       <Header />
       <br />
       <br />
+      <br />
         <AdSense.Google
           client='ca-pub-1358543966260909'
           slot='2136405413'
           style={{ display: 'block' }}
-          format='auto'
+          format='auto '
           responsive='true'
           layoutKey='-gw-1+2a-9x+5c'
         />
